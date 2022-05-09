@@ -1,0 +1,132 @@
+
+                                                  COMANDOS ESSENCIAIS
+
+//  comandos CMD 
+
+//  comandos git                                                        
+
+git status                                                              //  Exibe status do repositório
+git remote -v                                                           //  Exibe as origens dos repositórios
+git remote rm origin                                                    //  Remove a origem do repositório
+git add ARQUIVO.txt                                                     //  Adiciona um ARQUIVO na pasta "setar extensão"
+git add .                                                               //  Adiciona todos os arquivos de uma vez
+git commit arquivo.txt -m "mensagem a ser exibida no commit"            //  Commitar arquivo específico
+git commit -a -m "mensagem a ser exibida no commit"                     //  Commitar vários arquivos
+git push                                                                //  Envia os arquivos do Git para o GitHub
+git pull                                                                //  Envia os arquivos para o repositório do GitHub
+git clone https://github.com/Eugues/cursoGit01.git                      //  Clona o repositório do GitHub para o Git local
+          (comando + url do repositório do GitHub)
+git rm + nome do arquivo                                                //  Deleta arquivos do repositório após dar o push
+git log                                                                 //  Mostra todos os commits feitos
+git mv rodape.css css/rodape.css                                        //  Move o arquivo para a pasta desejada
+git mv css/bannerinicia.css css/banner_inicial.css                      //  Renomeia o arquivo
+
+
+//  criar um novo repositório na linha de comando
+
+                                                                                     //  COMANDOS 
+git init                                                                //  Inicia repositório com pasta oculta .git
+git add ARQUIVO.txt                                                     //  Adiciona um ARQUIVO na pasta "setar extensão"
+git commit -m "first commit"                                            //  Commit "mensagem do commit"
+git branch -M main                                                      //  Código mestre 
+git remote add origin https://github.com/Eugues/cursoGit01.git          //  Sincronizar Origem do Código
+git push -u origin main                                                 //  Enviar para a Origem mestre 
+
+
+//  verificando mudanças do projeto
+
+
+git status                                                              //  Exibe status do repositório
+
+* Aqui serão mapeadas todas as alterações do projeto
+* Como arquivos não monitorados e arquivos modificados
+* Mostra o que está sendo enviado ou salvo no projeto
+
+git add ARQUIVO.txt                                                     //  Adiciona um ARQUIVO na pasta "setar extensão"
+
+git add .                                                               //  Adiciona todos os arquivos de uma vez
+
+* pode-se adicionar um arquivo específico ou diversos 
+  arquivos de uma só vez
+* Somente adicionando arquivos eles se monitorados élo git
+  ou seja se não adicionar ele não estará no controle de versão
+* Utilizar este comando de tempos em tempos para nao perder 
+  algo importante por descuido
+
+
+
+//  salvando alterações do projeto
+
+git commit                                                              //  Salva as alterações realizadas no projeto
+
+git commit arquivo.txt -m "mensagem a ser exibida no commit"            //  commitar arquivo específico
+
+git commit -a -m "mensagem a ser exibida no commit"                     //  commitar vários arquivos                        
+
+* Podemos commitar arquivo específicos ou vários de uma vez com 
+  a flag -a
+* É uma boa prática enviar uma mensagem a cada commit, com 
+  as alterações que foram feitas
+* a mensagem pode ser adicionada com a flag -m 
+
+
+//  enviar código ao repositório remoto
+
+git push                                                                //  envia os arquivos do Git para o GitHub
+
+* quando finalizamos uma funcionalidade nova, enviamos o código
+  ao repositório remoto, que é o código fonte
+*o código do servidor (GitHub), será atualizado baseando-se no código local (Git); enviado
+
+
+//  recebendo as mudanças
+
+git pull                                                                //  Envia os arquivos para o repositório do GitHub
+
+* Sincroniza o o servidor local (Git), com o servidor remoto (GitHub)
+* verifica modificações no git GitHub e atualiza o repositório
+* Após o comando serão buscadas atualizações, e se encontradas serão 
+unidas ao código atualiza
+
+
+//  clonando repositórios
+
+git clone https://github.com/Eugues/cursoGit01.git                      //  clona o repositório do GitHub para o Git local
+(comando + url do repositório do GitHub)                 
+
+* Para utilizar este comando passamos a referência do repositório remoto
+* Este comando é utilizado quando entramos em um novo projeto
+
+
+//  removendo arquivos do repositório
+
+git rm + nome do arquivo                                                //  deleta arquivos do repositório após dar o push
+
+* Os arquivos podem ser deletados do Git
+* Após deletar os arquivos do Git ele não terá mais suas atualizações
+  consideradas pelo Git, apenas quando for adicionada novamente pelo
+  git add
+
+
+//  histórico de alterações
+
+git log                                                                 //  mostra todos os commits feitos
+
+* Podemos acessar um log de modificações feitas no projeto
+* git log mostra informações dos commits realizados no projeto
+
+
+//  renomeando e movendo arquivos
+
+git mv rodape.css css/rodape.css                                        //  Move o arquivo para a pasta desejada
+
+git mv css/bannerinicia.css css/banner_inicial.css                      //  Renomeia o arquivo
+
+* com git mv pode-se renomear um arquivo
+* pode-se mover o arquivo para outra pasta
+* fará com que este novo arquivo seja monitorado pelo Git
+* O arquivo anterior será excluído (como um CRTL + X)
+
+
+
+

@@ -1,0 +1,182 @@
+<!-- Cabeçalho -->
+
+<head>Cabeçalho</head> <br> <br>
+
+<!-- Corpo -->
+
+<body>Corpo</body> <br>
+
+<!-- Titulos --> <br><br>
+Titulos
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<!-- Parágrafo -->
+<p>Parágrafo</p>
+
+<!-- Quebra de linha -->
+Quebra de linha <br><br>
+
+<!-- Linha horizontal -->
+<hr>
+Linha horizontal
+<hr> <br>
+
+<!-- Negrito -->
+<strong>Negrito</strong> <br> <br>
+
+<!-- Itálico -->
+<em>Itálico</em> <br> <br>
+
+<!-- Underline -->
+<U>Underline</U> <br>
+
+<!-- Riscar palavra --> <br>
+<strike>Riscar palavra</strike> <br>
+
+<!-- Lista não ordenada -->
+<ul>Lista não ordenada</ul>
+
+<!-- Itens da lista -->
+<li>itens de lista</li> <br>
+
+<!-- Simbolo que mostram ao lado dos Itens -->
+# Simbolos que mostram ao lado dos Itens
+<ul type="circle">
+    <li>itens de lista circle</li>
+</ul>
+
+<ul type="square">
+    <li>itens de lista square</li>
+</ul>
+
+<ul type="disc">
+    <li>itens de lista disc</li>
+</ul>
+
+<!-- Listas ordenadas -->
+<ol></ol>
+
+<!--type="A", 1(Numéricos),a(alfabeto minúsculo),A(alfabeto maiúsculo),i (Romanos minúsculo),I (Romanos maiúsculo)-->
+# Simbolos que mostram ao lado dos Itens
+<ol type="1">
+    <li>(Numéricos)</li>
+    <li>(Numéricos)</li>
+    <li>(Numéricos)</li>
+</ol>
+<ol type="a">
+    <li>(alfabeto minúsculo)</li>
+    <li>(alfabeto minúsculo)</li>
+    <li>(alfabeto minúsculo)</li>
+</ol>
+<ol type="A">
+    <li>alfabeto maiúsculo</li>
+    <li>alfabeto maiúsculo</li>
+    <li>alfabeto maiúsculo</li>
+</ol>
+<ol type="i">
+    <li>Romanos minúsculo</li>
+    <li>Romanos minúsculo</li>
+    <li>Romanos minúsculo</li>
+</ol>
+<ol type="I">
+    <li>Romanos maiúsculo</li>
+    <li>Romanos maiúsculo</li>
+    <li>Romanos maiúsculo</li>
+</ol>
+
+# Inserir imagens <br>
+<img src="/1. Seção 3/imagens/ferrari.jpg" width="20%">
+<!--buscar a pasta onde se encontra a imagem.--> <br><br>
+
+# Criar link <br>
+<a href="pagina a ser linkada">texto do link</a> <br><br>
+
+# Tabelas <br>
+<table>borda da tabela</table> <br><br>
+
+# Atributos de tabelas <br><br>
+<table border="9">largura da borda em pixel</table> <br><br>
+<table width="400">largura fixa da tabela</table> <br><br>
+<table width="50%">largura do navegador em porcentagem</table> <br><br>
+
+<th>Cabeçalho dos dados (table header)</th> <br><br>
+<tr>Linhas da tabela (table row)</tr> <br><br>
+<td>Dados da tabela (table data)</td> <br><br>
+
+<td rowspan="2">Mescla duas linhas</td> <br><br>
+<td colspan="2">Mescla duas colunas</td><br><br><br>
+
+# Estruturas Básicas de tabelas
+<table border="2" width="50%">
+    <h2>Produtos</h2>
+    <tr>
+        <th>Código</th>
+        <th>Produtos</th>
+        <th>Preço</th>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>Notebook</td>
+        <td>R$ 2.000,00</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Tablete</td>
+        <td>R$ 1.000,00</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Desconto</td>
+        <td colspan="2">cupom 01 - R$ 10 <br> </td>
+    </tr>
+    <tr>
+        <td colspan="2">cupom 02 - R$ 12</td>
+    </tr>
+</table> <br><br><br>
+
+# Estrutura basica de formulário
+<h2>Login</h2>
+<form>
+    Login: <br>
+    <input type="text" name="login"> <br>
+
+    Senha: <br>
+    <input type="password" name="senha"> <br>
+    <input type="submit" value="Logar">
+</form>
+<br><br><br>
+
+# Estrutura básica de formulário com mais componentes
+<h2>Cadastro</h2>
+<form>
+    Login: <br>
+    <input type="text" name="login"> <br>
+
+    Sexo: <br>
+    <input type="radio" name="sexo" value="M">
+    Masculino: <br>
+    <input type="radio" name="sexo" value="F">
+    Feminino: <br><br>
+
+    Interesses: <br>
+    <input type="checkbox" name="interesses">
+    Futebol <br>
+    <input type="checkbox" name="interesses">
+    Cursos <br>
+    <input type="checkbox" name="interesses">
+    Moda <br><br>
+    Estado: <br>
+    <select name="estado">
+        <option value="AM">Amazonas</option>
+        <option value="SP">São Paulo</option>
+        <option value="BR">Brasilia</option>
+        <option value="RS">Rio Grande do Sul</option>
+    </select> <br><br>
+    Observações: <br>
+    <textarea></textarea> <br>
+    <input type="submit" value="Cadastrar">
+</form>
